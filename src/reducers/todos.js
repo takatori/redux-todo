@@ -3,7 +3,7 @@ function todos(state = [], action) {
     switch(action.type) {
     case 'ADD_TODO':
         return [
-                ...state,
+                ...state, 
             { text: action.text, completed: false }
         ]
     case 'COMPMLETE_TODO':
